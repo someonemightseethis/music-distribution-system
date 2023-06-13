@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>saaz ghar</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap&family=Hubballi&family=Inconsolata:wght@300;400;600&family=Bungee+Shade&family=Cousine&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fec6017011.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="/images/saaz-ghar-logo-2.ico">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html">
+      <h1>saaz ghar</h1>
+    </a>
+
+    <ul class="navlinks">
+      <li><a href="tracks.html" class="nav-link">tracks</a></li>
+      <li><a href="upload.html" class="nav-link">upload</a></li>
+      <li><a href="analytics.html" class="nav-link">analytics</a></li>
+    </ul>
+
+    <div class="nav-button">
+      <a href="login-signup.html"><button type="button" class="selling-button">start selling</button></a>
+      <a href="login-signup.html"><button type="button">login</button></a>
+      <a href="login-signup.html"><button type="button">sign-up</button></a>
+    </div>
+
+    <div class="searchbar">
+      <input type="search" name="search" value="" placeholder="search" class="nav-search">
+      <a href="#"><i class="fa fa-solid fa-magnifying-glass"></i></a>
+    </div>
+
+    <div class="user-cart-icon">
+      <a href="#"><i class="fa-solid fa-cart-shopping fa"></i></a>
+      <a href="#"><i class="fa-regular fa-user fa"></i></a>
+    </div>
+  </div>
+
+  <div class="upload-main">
+    <h2 class="upload-h2">Upload Tracks</h2>
+    <p class="upload-p">Production tracks are music files that are intended to be licensed by recording artists and songwriters. These files can be beats, beats with choruses, fully referenced song files and vocal tracks.</p>
+    <!-- <div class="upload-cards-sec">
+      <h2 class="upload-h2">Production Tracks</h2>
+      <p class="upload-p">Production tracks are music files that are intended to be licensed by recording artists and songwriters. These files can be beats, beats with choruses, fully referenced song files and vocal tracks.</p>
+      <a href="#"><button type="button" class="upload-button">upload</button></a>
+    </div>
+
+    <div class="upload-cards-sec">
+      <h2 class="upload-h2">Sound Kits</h2>
+      <p class="upload-p">Sound Kits are compiled sound packs offered by producers for other producers/artists to use in their music. They may contain sound banks, loops, drum kits, sound splices, effects, software specific files, etc.</p>
+      <a href="#"><button type="button" class="upload-button">upload</button></a>
+    </div> -->
+  </div>
+
+  <div class="upload-tracks">
+    <div class="upload-tracks-main">
+      <form class="uploadForm" action="#" method="post" enctype="multipart/form-data" target="">
+        <div class="upload-tracks-sec">
+          <h4 class="upload-h4">artwork / cover</h4>
+          <input type="file" name="audio_file" accept="image/*" class="fileUpload">
+          <br><br><br>
+          <h4 class="upload-h4">upload track(s)</h4>
+          <input type="file" name="audio_file" accept="audio/*" class="fileUpload">
+        </div>
+
+        <div class="upload-tracks-sec">
+          <h4 class="upload-h4">track name</h4>
+          <input type="text" name="trackname" value="" class="uploadInputs">
+          <br><br><br><br>
+          <h4 class="upload-h4">set price (pkr)</h4>
+          <input type="number" name="trackPrice" value="" class="uploadInputs">
+          <!-- <h4 class="upload-h4">tags</h4>
+          <input type="text" name="tags" value="" class="uploadInputs"> -->
+
+          <!-- uploaded artwork visible -->
+          <!-- <div class="artworkInputBoxVisibleContainer resizeWithArtwork">
+          <div class="artworkInputBoxVisible artworkInputBoxVisibleBorder resizeWithArtwork">
+            <div style="margin-top:115px;" class="artworkInputText">
+            <div class="hideFromIE"><i class="fa fa-download" aria-hidden="true"></i></div>
+            <div class="showOnlyInIE" style="display:none;">Click here to</div>
+            <div class="bold">Choose new image</div>
+            <div class="hideFromIE">Or drag it here</div>
+            <div class="artworkLoading" style="position: absolute;top:5px;left:4px;line-height: 20px;display: none;">
+              <i style="margin: 0px 2px 0px 2px;" class="fa fa-cog fa-spin fa-fw" title="Loading artwork, please wait..."></i>Loading...
+            </div>
+            </div>
+          </div>
+          <div class="artworkVisible resizeWithArtwork">
+          </div>
+          <div class="artworkInputBoxInvisible resizeWithArtwork">
+            <input onchange="newReleaseChangedArtwork(this,event);" accept="image/*" name="artwork" type="file" id="artwork" class="large distroFileInput resizeWithArtwork distroFile">
+          </div>
+        </div> -->
+          <br><br><br><br><br><br>
+
+          <a href="#"><button type="button" class="proceed-button">proceed</button></a>
+        </div>
+
+        <div class="upload-tracks-sec">
+          <h4 class="upload-h4">genre</h4>
+          <select class="upload-genreSelect" name="">
+            <option value="">hip-hop</option>
+            <option value="">pop</option>
+            <option value="">techno</option>
+            <option value="">pluggnb</option>
+            <option value="">country</option>
+            <option value="">pakistani cultural</option>
+            <option value="">metal</option>
+          </select>
+          <br><br><br><br>
+          <h4 class="upload-h4">bpm</h4>
+          <input type="number" name="trackPrice" value="" class="uploadInputs">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- <div class="upload-soundkit">
+  <h2>upload soundkit</h2>
+    <form class="uploadForm" action="#" method="post" enctype="multipart/form-data" target="">
+      <div class="upload-soundkit-sec">
+        <h4 class="upload-h4">upload the kit previews. (5 items)</h4>
+        <input type="hidden" name="key" value="166152c0-ab90-b1df-bc21-3ce4f1317754_${filename}">
+        <input type="hidden" name="acl" value="public-read">
+        <input type="hidden" name="AWSAccessKeyId" value="AKIARYIZLBF4VEVCRUU7">
+        <input type="hidden" name="policy"
+          value="eyJleHBpcmF0aW9uIjogIjIwMTgtMTAtMjFUMDA6MDA6MDBaIiwKICAiY29uZGl0aW9ucyI6IAogIFsgCiAgICB7ImJ1Y2tldCI6ICJnYXRoZXIuZmFuZGFsaXNtLmNvbSJ9LCAKICAgIFsic3RhcnRzLXdpdGgiLCAiJGtleSIsICIiXSwKICAgIHsiYWNsIjogInB1YmxpYy1yZWFkIn0sCglbInN0YXJ0cy13aXRoIiwgIiRDb250ZW50LVR5cGUiLCAiIl0sCiAgICBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMCwgMTA3Mzc3NzQwXQogIF0KfQ==">
+        <input type="hidden" name="signature" value="Wvs+apj/ZllhXbNy4aIWPxH9ERk=">
+        <input onchange="newReleaseChangedAudioFile(this,event);" name="file" accept="audio/*,.wav,.mp3,.m4a,.flac,.aif,.aiff,.wma,.mp4,.ogg,.aac" type="file" tracknum="1" class="fileUpload">
+        <br>
+
+        <h4 class="upload-h4">soundkit artwork / cover</h4>
+        <input type="hidden" name="key" value="166152c0-ab90-b1df-bc21-3ce4f1317754_${filename}">
+        <input type="hidden" name="acl" value="public-read">
+        <input type="hidden" name="AWSAccessKeyId" value="AKIARYIZLBF4VEVCRUU7">
+        <input type="hidden" name="policy"
+          value="eyJleHBpcmF0aW9uIjogIjIwMTgtMTAtMjFUMDA6MDA6MDBaIiwKICAiY29uZGl0aW9ucyI6IAogIFsgCiAgICB7ImJ1Y2tldCI6ICJnYXRoZXIuZmFuZGFsaXNtLmNvbSJ9LCAKICAgIFsic3RhcnRzLXdpdGgiLCAiJGtleSIsICIiXSwKICAgIHsiYWNsIjogInB1YmxpYy1yZWFkIn0sCglbInN0YXJ0cy13aXRoIiwgIiRDb250ZW50LVR5cGUiLCAiIl0sCiAgICBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMCwgMTA3Mzc3NzQwXQogIF0KfQ==">
+        <input type="hidden" name="signature" value="Wvs+apj/ZllhXbNy4aIWPxH9ERk=">
+        <input onchange="newReleaseChangedAudioFile(this,event);" name="file" accept="image/x-png image/jpeg" type="file" tracknum="1" class="fileUpload">
+      </div>
+
+      <div class="upload-soundkit-sec">
+        <h4 class="upload-h4">soundkit name</h4>
+        <input type="text" name="soundkitName" value="" class="uploadInputs">
+
+        <h4 class="upload-h4">compress the soundkit folder and upload the .zip / .rar file as a whole.</h4>
+        <input type="hidden" name="key" value="166152c0-ab90-b1df-bc21-3ce4f1317754_${filename}">
+        <input type="hidden" name="acl" value="public-read">
+        <input type="hidden" name="AWSAccessKeyId" value="AKIARYIZLBF4VEVCRUU7">
+        <input type="hidden" name="policy"
+          value="eyJleHBpcmF0aW9uIjogIjIwMTgtMTAtMjFUMDA6MDA6MDBaIiwKICAiY29uZGl0aW9ucyI6IAogIFsgCiAgICB7ImJ1Y2tldCI6ICJnYXRoZXIuZmFuZGFsaXNtLmNvbSJ9LCAKICAgIFsic3RhcnRzLXdpdGgiLCAiJGtleSIsICIiXSwKICAgIHsiYWNsIjogInB1YmxpYy1yZWFkIn0sCglbInN0YXJ0cy13aXRoIiwgIiRDb250ZW50LVR5cGUiLCAiIl0sCiAgICBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMCwgMTA3Mzc3NzQwXQogIF0KfQ==">
+        <input type="hidden" name="signature" value="Wvs+apj/ZllhXbNy4aIWPxH9ERk=">
+        <input onchange="newReleaseChangedAudioFile(this,event);" name="file" accept="application/x-zip-compressed" type="file" tracknum="1" class="fileUpload">
+        <br><br>
+        <a href="#"><button type="button" class="proceed-button">proceed</button></a>
+      </div>
+
+      <div class="upload-soundkit-sec">
+        <h4 class="upload-h4">set price (pkr)</h4>
+        <input type="number" name="soundkitPrice" value="" class="uploadInputs">
+
+        <h4 class="upload-h4">genre</h4>
+        <select class="upload-genreSelect" name="">
+          <option value="">hip-hop</option>
+          <option value="">pop</option>
+          <option value="">techno</option>
+          <option value="">pluggnb</option>
+          <option value="">country</option>
+          <option value="">pakistani cultural</option>
+          <option value="">metal</option>
+        </select>
+
+        <h4 class="upload-h4">genre 2 (optional)</h4>
+        <select class="upload-genreSelect" name="">
+          <option value="">hip-hop</option>
+          <option value="">pop</option>
+          <option value="">techno</option>
+          <option value="">pluggnb</option>
+          <option value="">country</option>
+          <option value="">pakistani cultural</option>
+          <option value="">metal</option>
+        </select>
+      </div>
+    </form>
+  </div> -->
+
+  <div class="footer">
+    <div class="footer-sec">
+      <h3>support</h3>
+      <ul class="footer-ul">
+        <li><a href="" class="footer-link">payment plans</a></li>
+        <li><a href="start_selling.html" class="footer-link">start selling</a></li>
+        <li><a href="" class="footer-link">signup</a></li>
+        <li><a href="" class="footer-link">contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-sec">
+      <h3>socials</h3>
+      <ul class="footer-ul">
+        <li><a href="" class="footer-link">instagram</a></li>
+        <li><a href="" class="footer-link">twitter</a></li>
+        <li><a href="" class="footer-link">youtube</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
